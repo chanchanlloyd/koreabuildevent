@@ -1,8 +1,8 @@
 // 링크 설정
 const links = {
     kakao: "https://pf.kakao.com/_yJiuxj/chat",
-    youtube: "https://www.youtube.com/vnd.youtube://@dada_store",
-    instagram: "https://www.instagram.com/dada_gimpo/"
+    youtube: "https://youtube.com/channel/@dada_store",
+    instagram: "https://instagram.com/dada_gimpo"
 };
 
 // 방문 상태 추적
