@@ -1,7 +1,7 @@
 // 링크 설정
 const links = {
     kakao: "https://pf.kakao.com/_yJiuxj/chat",
-    youtube: "https://youtube.com/channel/@dada_store",
+    youtube: "https://youtube.com/@dada_store",
     instagram: "https://instagram.com/dada_gimpo"
 };
 
