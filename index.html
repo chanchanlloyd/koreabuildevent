@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 참여하기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="mainPage">
+            <h1 class="title">이벤트 참여하기</h1>
+            
+            <button class="link-button" id="kakaoButton" onclick="handleLinkClick('kakao')">
+                <span>카카오톡 친구추가</span>
+                <span class="arrow">→</span>
+            </button>
+
+            <button class="link-button disabled" id="youtubeButton" onclick="handleLinkClick('youtube')">
+                <span>유튜브 구독하기</span>
+                <span class="arrow">→</span>
+            </button>
+
+            <button class="link-button disabled" id="instagramButton" onclick="handleLinkClick('instagram')">
+                <span>인스타그램 팔로우</span>
+                <span class="arrow">→</span>
+            </button>
+
+            <button class="next-button disabled" id="nextButton" onclick="showFinalPage()">
+                다음
+            </button>
+        </div>
+
+        <div class="card hidden" id="finalPage">
+            <h2 class="title">링크 공유하기</h2>
+            
+            <div class="button-group">
+                <button class="copy-button" onclick="copyToClipboard('카카오톡 친구추가, 유튜브 구독, 인스타그램 팔로우 완료')">
+                    <span>모두 완료</span>
+                    <span class="copy-icon">복사</span>
+                </button>
+
+                <button class="copy-button" onclick="copyToClipboard('카카오톡 친구추가, 유튜브 구독 완료')">
+                    <span>카카오톡 + 유튜브</span>
+                    <span class="copy-icon">복사</span>
+                </button>
+
+                <button class="copy-button" onclick="copyToClipboard('카카오톡 친구추가, 인스타그램 팔로우 완료')">
+                    <span>카카오톡 + 인스타그램</span>
+                    <span class="copy-icon">복사</span>
+                </button>
+
+                <button class="phone-button" onclick="handlePhoneClick()">
+                    <span>전화번호 저장하기</span>
+                    <span class="phone-icon">📞</span>
+                </button>
+            </div>
+
+            <p class="disclaimer">
+                *위 내용이 사실과 다를 경우 이벤트 참여가 제한될 수 있습니다.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
