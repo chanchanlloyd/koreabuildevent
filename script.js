@@ -64,7 +64,7 @@ function copyToClipboard(text) {
 
 // 전화번호 클릭 처리
 function handlePhoneClick() {
-    window.location.href = 'tel:070-8821-6610';
+    window.location.href = 'tel:010-4046-6610';
 }
 
 // 최종 페이지 표시
